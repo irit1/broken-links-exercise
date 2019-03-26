@@ -98,7 +98,7 @@ namespace trendeamon.Services.BrokenLinks
 
         private IEnumerable<string> GetUrlLinks(string url)
         {
-            var urlPrefix = GetUrlPrefix(url) + '/';
+            var urlPrefix = GetUrlPrefix(url);
             var urlSchema = GetUrlSchema(url);
 
             HtmlWeb web = new HtmlWeb();
